@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网站主页</title>
+    <!--指示在一个新的页面打开某个连接-->
+    <base href="" target="_blank"/>
+    <!--引入外部样式表-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <!--引入外部js文件-->
+    <script src="../js/MyJs.js"></script>
+    <!--添加网站标志图片-->
+    <link rel="shortcut icon" href="../image/1.png" type="image/x-icon"/>
+</head>
+<!--一个button,点击会弹出一个dialog-->
+<button onclick="showDialog('展会')">点击显示对话框</button>
+<!--连接到一个外部网站-->
+<p><a href="https://www.baidu.com">百度一下,你就知道</a>
+    <!--加粗-->
+    <b>当然你也可以<a href="https://www.sogou.com/">搜狗一下</a></b></p>
+<!--斜体,文字上加横线-->
+<p>她是一个<em>女性</em>玩家,英文名字<i>maria</i>,以前中文名字叫<s>小狗蛋</s>,现在叫<strong>小苹果</strong></p>
+<p><u>这不是一个链接,为了防止与a元素混淆,建议不要使用,并且现在在H5中已经被deprecate了</u></p>
+
+<p> 这是
+    <small>small</small>
+    标签,这是<sub>sub下标</sub>,这是<sup>sup上标</sup>,这是<br>换行</p>
+<p>这是一段代码<br><code><br> public boolean onKeyDown(int keyCode, KeyEvent event) {<br>
+    if (keyCode == KeyEvent.KEYCODE_BACK) {<br>
+    if (System.currentTimeMillis() - timeSpace > 2000) {<br>
+    timeSpace = System.currentTimeMillis();<br>
+    Toast.makeText(MainActivity.this, "再按一次退出程序", Toast.LENGTH_SHORT).show();<br>
+    } else {<br>
+    AppManager.newInstance().AppExit(this);<br>
+    }<br>
+    }<br>
+    return true;<br>
+    }</code></p>
+</body>
+</html>

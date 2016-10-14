@@ -1,0 +1,10 @@
+button{
+    background: black;
+    color: #ffffff;
+    padding: inherit;
+}
+code{
+    background: blanchedalmond;
+    color: black;
+    font-family: Consolas;
+}
