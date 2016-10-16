@@ -26,18 +26,80 @@
     <small>small</small>
     标签,这是<sub>sub下标</sub>,这是<sup>sup上标</sup>,这是<br>换行
 </p>
-<p>这是一段代码<br><code><br> public boolean onKeyDown(int keyCode, KeyEvent event) {<br>
-    if (keyCode == KeyEvent.KEYCODE_BACK) {<br>
-      if (System.currentTimeMillis() - timeSpace > 2000) {<br>
-    timeSpace = System.currentTimeMillis();<br>
-    Toast.makeText(MainActivity.this, "再按一次退出程序", Toast.LENGTH_SHORT).show();<br>
-    } else {<br>
-    AppManager.newInstance().AppExit(this);<br>
-    }<br>
-    }<br>
-    return true;<br>
-    }</code></p>
-<p>这是一个缩写  <abbr title="Hypertext Markup Language">HTML</abbr>,这是一个<mark>mark语句</mark></p>
-<p>这是一个指定时间:<time datetime="15.00">3点</time></p>
+<p>这是一段代码<pre><code> public boolean onKeyDown(int keyCode, KeyEvent event) {
+    if (keyCode == KeyEvent.KEYCODE_BACK) {
+    if (System.currentTimeMillis() - timeSpace > 2000) {
+    timeSpace = System.currentTimeMillis();
+    Toast.makeText(MainActivity.this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+    } else {
+    AppManager.newInstance().AppExit(this);
+    }
+    }
+    return true;
+    }
+</code></pre>
+</p>
+<p>这是一个缩写
+    <abbr title="Hypertext Markup Language">HTML</abbr>,这是一个
+    <mark>mark语句</mark>
+</p>
+<p>这是一个指定时间:
+    <time datetime="15.00">3点</time>
+</p>
+<hr title="这是分割线"/>
+<h4>有序列表</h4>
+<ol>
+    <li>这是有序列表1,前面默认带数字标识,可以用css控制item样式</li>
+    <li>这是有序列表2</li>
+    <li>这是有序列表3</li>
+    <li>...</li>
+    <li>这是有序列表n</li>
+</ol>
+<h4>无序列表</h4>
+<ul>
+    <li><a href="https://www.baidu.com">这是无序列表1,和有序列表相同,都是使用li元素表示一个item,可以用css控制item样式</a></li>
+    <li>这是无序列表2</li>
+    <li>这是无序列表3</li>
+    <li>...</li>
+    <li>这是无序列表n</li>
+</ul>
+<hr/>
+<h4>表格元素</h4>
+<table>
+    <tr>
+        <td>第一行,单元格1</td>
+        <td>单元格2</td>
+        <td>单元格3</td>
+    </tr>
+    <tr>
+        <td>第二行,单元格1</td>
+        <td>单元格2</td>
+    </tr>
+    <tr>
+        <td>第三行,单元格1</td>
+    </tr>
+    
+</table>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 </body>
 </html>
